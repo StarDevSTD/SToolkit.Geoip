@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;net35;net40;net45</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <Company>StarDev</Company>
+    <Description>Geoip api</Description>
+    <Copyright>StarDev</Copyright>
+    <PackageProjectUrl>https://github.com/StarDevSTD/SToolkit.Geoip</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/StarDevSTD/SToolkit.Geoip</RepositoryUrl>
+    <Version>1.0.0</Version>
+    <AssemblyOriginatorKeyFile>Stoolkit.Geoip.Key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+</Project>
