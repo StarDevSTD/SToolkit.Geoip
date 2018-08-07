@@ -52,3 +52,4 @@ string IP { get; set; }
 RequestState Status { get; set; }
 string ErrorText { get; }
 ```
+If you exceed limitations, you need manually unblock your ip [here](http://ip-api.com/docs/unban)
