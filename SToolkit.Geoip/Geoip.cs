@@ -33,7 +33,7 @@ namespace SToolkit.Geoip
         {
             WebClient wc = new WebClient();
             wc.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 YaBrowser/18.6.1.770 Yowser/2.5 Safari/537.36");
-            if (ProxyHost != null)
+            if (ProxyHost != null && ProxyPort != 0)
             {
                 wc.Proxy = new WebProxy(ProxyHost, ProxyPort);
                 if (ProxyLogin != null && ProxyPass != null)
