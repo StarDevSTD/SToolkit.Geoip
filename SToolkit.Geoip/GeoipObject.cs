@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SToolkit.Geoip
+﻿namespace SToolkit.Geoip
 {
     public class GeoipObject
     {
