@@ -6,12 +6,14 @@
     <SignAssembly>false</SignAssembly>
     <DelaySign>false</DelaySign>
     <Company>StarDev</Company>
-    <Description>Geoip api</Description>
+    <Description>Geoip api by ip-api.com</Description>
     <Copyright>StarDev</Copyright>
     <PackageProjectUrl>https://github.com/StarDevSTD/SToolkit.Geoip</PackageProjectUrl>
     <RepositoryUrl>https://github.com/StarDevSTD/SToolkit.Geoip</RepositoryUrl>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <AssemblyOriginatorKeyFile>Stoolkit.Geoip.Key.pfx</AssemblyOriginatorKeyFile>
+    <RepositoryType />
+    <PackageTags>Geoip, api, ip-api</PackageTags>
   </PropertyGroup>
 
 </Project>
