@@ -1,20 +1,65 @@
-﻿namespace SToolkit.Geoip
+﻿using System;
+using System.Text.RegularExpressions;
+
+namespace SToolkit.Geoip
 {
     public class GeoipObject
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public string Country { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string CountryCode { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string Region { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string RegionName { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string City { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public int Zip { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public float Lat { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public float Lot { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string Timezone { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string Isp { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string Org { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string As { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public string IP { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public RequestState Status { get; set; }
 
         public string ErrorText
@@ -57,7 +102,7 @@
 
         public static GeoipObject Deserialize(string data)
         {
-            string[] array = data.Split(',');
+            string[] array = Regex.Split(data, ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
             if (data.StartsWith("success") && array.Length > 10)
             {
                 return new GeoipObject()

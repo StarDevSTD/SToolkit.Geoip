@@ -6,6 +6,7 @@ namespace SToolkit.Geoip.DemoAppNet45
     {
         static void Main(string[] args)
         {
+            Geoip.Language = "ru";
             var o = Geoip.RequestAsync("github.com");
             if (o.Result.Status != RequestState.Success)
                 Console.WriteLine(o.Result.ErrorText);
