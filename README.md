@@ -22,20 +22,6 @@ Including
 ```C#
 using SToolkit.Geoip;
 ```
-Set language
-```C#
-Geoip.Language = "ru";
-```
-Avalible languages
-| en    | English (default)             |
-|-------|-------------------------------|
-| de    | Deutsch (German)              |
-| es    | Español (Spanish)             |
-| pt-BR | Español - Argentina (Spanish) |
-| fr    | Français (French)             |
-| ja    | 日本語 (Japanese)             |
-| zh-CN | 中国 (Chinese)                |
-| ru    | Русский (Russian)             |
 Easy usage with domain
 ```C#
 GeoipObject o = Geoip.Request("192.30.253.113");
@@ -66,4 +52,21 @@ string IP { get; set; }
 RequestState Status { get; set; }
 string ErrorText { get; }
 ```
+Default output data language is english, you can change it by
+```C#
+Geoip.Language = "ru";
+```
+Avalible languages
+
+|  Code |            Language           |
+|:-----:|:-----------------------------:|
+| en    | English (default)             |
+| de    | Deutsch (German)              |
+| es    | Español (Spanish)             |
+| pt-BR | Español - Argentina (Spanish) |
+| fr    | Français (French)             |
+| ja    | 日本語 (Japanese)             |
+| zh-CN | 中国 (Chinese)                |
+| ru    | Русский (Russian)             |
+
 If you exceed limitations, you need manually unblock your ip [here](http://ip-api.com/docs/unban)
