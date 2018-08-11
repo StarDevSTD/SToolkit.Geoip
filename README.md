@@ -24,7 +24,7 @@ using SToolkit.Geoip;
 ```
 Easy usage with domain
 ```C#
-GeoipObject o = Geoip.Request("192.30.253.113");
+GeoipObject o = Geoip.Request("github.com");
 ```
 or ip address
 ```C#
